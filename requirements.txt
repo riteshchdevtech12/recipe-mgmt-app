@@ -4,3 +4,4 @@ strawberry-graphql
 psycopg2-binary
 djangorestframework-simplejwt
 django-environ
+gunicorn
