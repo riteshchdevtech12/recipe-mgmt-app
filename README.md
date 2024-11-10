@@ -18,6 +18,8 @@ Welcome to the **Recipe Management App**! This app allows you to manage ingredie
   - [Get Single Ingredient by ID](#get-single-ingredient-by-id)
   - [Get Single Recipe by ID](#get-single-recipe-by-id)
 - [Running the App Locally](#running-the-app-locally)
+- [Create Superuser](#create-superuser)
+- [Generate Access Token](#generate-access-token)
 
 ## Getting Started
 
@@ -230,5 +232,36 @@ From there, you can test the mutations and queries mentioned above.
 
 ---
 
-That's it! You're ready to manage your ingredients and recipes using GraphQL. Happy coding!
+## Create Superuser
+
+To create a superuser in the application, use the following command:
+
+```bash
+docker-compose exec web python manage.py createsuperuser
 ```
+
+Follow the prompts to create the superuser account. You can then log into the Django admin panel to manage users and data.
+
+## Generate Access Token
+
+To access the GraphQL API, you need to generate an authentication token. Use the following method:
+
+### API Endpoint
+
+- **Endpoint:** `/api/token/`
+- **Method:** `POST`
+
+### Request Payload
+
+```json
+{
+  "username": "ritesh",
+  "password": "Test@123"
+}
+```
+
+Once the request is successful, you'll receive an access token that you can use to authenticate requests to the GraphQL API.
+
+---
+
+That's it! You're ready to manage your ingredients and recipes using GraphQL. Happy coding!
