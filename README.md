@@ -138,7 +138,7 @@ To fetch a list of all ingredients:
 
 ```graphql
 query {
-  allIngredients {
+  allIngredients(pagination: { offset: 0, limit: 2 }) {
     id
     name
     description
@@ -152,7 +152,7 @@ To fetch a list of all recipes:
 
 ```graphql
 query {
-  allRecipes {
+  allRecipes(pagination: { offset: 0, limit: 2 }) {
     id
     name
     description
