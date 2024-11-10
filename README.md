@@ -1,4 +1,3 @@
-```markdown
 # Recipe Management App
 
 Welcome to the **Recipe Management App**! This app allows you to manage ingredients and recipes using GraphQL mutations and queries. Below you'll find instructions for how to perform basic operations like creating, updating, deleting ingredients, and managing recipes.
